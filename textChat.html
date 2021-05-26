@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>OpenChat</title>
+	<link rel="icon" href="images/chatLogo.png">
+    <link href="style/styleChat.css" rel="stylesheet" type="text/css" />
+	<script type='text/javascript' src='https://cdn.scaledrone.com/scaledrone.min.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+	<div id="loading"></div>
+	<div class="info">
+		<p><b>Updates</b></p>
+		<ul>
+			<li>10/11/19 - Anonymous feature added!</li>
+			<li>10/10/19 - Chat is live!</li>
+			<li>10/10/19 - Video Chat is live!</li>
+		</ul>
+		<p><b>Information</b></p>
+		<ul>
+			<li>If you do not see your name or your messages, then refresh the page until you are assigned an anonymous name. Continuing to use the chat when your name/messages are not present will ruin the chat experience for you!</li>
+			<li>Press enter to submit a message to the chat</li>
+			<li>Video chat generation link <a href="videoChat.html">here</a></li>
+		</ul>
+		<p><b>Rules</b></p>
+		<ul>
+			<li>Do not spam</li>
+			<li>Do not give private information unless you want me peeking in on it</li>
+			<li>No inappropriate content</li>
+		</ul>
+		<button id="closeButton">x</button>
+	</div>
+	<div class="messages"></div>
+	<form class="message-form" onsubmit="return false;">
+	<input class="message-form__input" placeholder="Type a message." type="text"/>
+	</form>
+</body>
+<script src="script/scriptChat.js"></script>
+</html>
